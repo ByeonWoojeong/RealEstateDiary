@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".PayHistoryActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_img"
+            android:id="@+id/back_btn"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="결제 내역"
+            android:textColor="#5a5a5a"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+        <ProgressBar
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:max="100"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="#ffffff"
+        android:id="@+id/service_remained_layout"
+        >
+
+        <TextView
+            android:layout_marginLeft="19dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스 남은 기간"
+            android:textColor="#5a5a5a"
+            android:textSize="14sp"
+            android:layout_gravity="left|center_vertical"
+            android:fontFamily="@font/notosans_regular"
+            />
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_marginLeft="8dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="8"
+            android:textColor="#5a5a5a"
+            android:textSize="14sp"
+            android:layout_gravity="left|center_vertical"
+            android:fontFamily="@font/notosans_regular"
+            />
+
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            android:textColor="#5a5a5a"
+            android:textSize="14sp"
+            android:layout_gravity="left|center_vertical"
+            android:fontFamily="@font/notosans_regular"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3" />
+
+    <RelativeLayout
+        android:id="@+id/no_service_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="결제 내역이 없습니다."
+                android:textColor="#5a5a5a"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/notosans_regular"
+                />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_service_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ListView
+            android:id="@+id/payment_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1px"
+            android:divider="#e3e3e3"/>
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/payment_list"
+            android:background="#e3e3e3"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

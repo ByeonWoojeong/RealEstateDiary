@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="29dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/baseColor"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:id="@+id/group_name"
+                android:ellipsize="end"
+                android:fontFamily="@font/notosans_medium"
+                tools:text="그룹 이름"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/boss_phone"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#252525"
+                android:textSize="14sp"
+                tools:text="010-1234-5678"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+            <FrameLayout
+                android:layout_marginTop="28dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:layout_gravity="left"
+                        android:id="@+id/yes"
+                        android:background="@drawable/button_base_radius"
+                        android:layout_width="116dp"
+                        android:layout_height="40dp"
+                        android:text="수락"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/notosans_medium"/>
+
+                    <Button
+                        android:layout_marginLeft="9dp"
+                        android:id="@+id/no"
+                        android:background="@drawable/button_gray_radius"
+                        android:layout_width="116dp"
+                        android:layout_height="40dp"
+                        android:text="거절"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/notosans_medium"/>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.cosmos.ghrealestatediary.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:elevation="0dp"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#ffffff"
+            >
+
+            <ImageView
+                android:layout_marginLeft="19dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_width="147dp"
+                android:layout_height="28dp"
+                android:background="@drawable/main_title"
+                />
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/title_con0"
+                >
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@drawable/main_setting"
+                    android:id="@+id/setting"
+                    />
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@drawable/main_search"
+                    android:id="@+id/search"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:id="@+id/title_con1"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="9dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="28dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/back_img"
+                    android:id="@+id/back_btn"
+                    />
+
+                <TextView
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#5a5a5a"
+                    android:text="조건 찾기"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notosans_medium"
+                    />
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/refresh"
+                    android:id="@+id/refresh_btn"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:id="@+id/title_con2"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="19dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="147dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/main_title"
+                    />
+
+                <FrameLayout
+                    android:visibility="visible"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="53dp"
+                    android:id="@+id/share_con">
+
+                    <ImageView
+                        android:id="@+id/share"
+                        android:layout_width="17dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:background="@drawable/share"
+                        />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_gravity="right"
+                    android:layout_marginRight="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ggalddegi_con">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:background="@drawable/ggalddegi"
+                        android:id="@+id/ggalddegi"
+                        />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:id="@+id/x_con">
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:background="@drawable/x"
+                        android:id="@+id/x"
+                        />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_condition1"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="#ffffff"
+            >
+
+
+
+            <app.cosmos.ghrealestatediary.CustomTabLayout.TabLayoutWithArrow
+                style="@style/TabLayout1"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                android:id="@+id/tabsMain"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:overScrollMode="never"
+                android:background="#FFFFFF"
+                app:tabMode="scrollable"
+                app:tabGravity="fill"
+                app:tabPaddingStart="-1dp"
+                app:tabPaddingEnd="-1dp" />
+
+            <RelativeLayout
+                android:id="@+id/tab_gradation_2"
+                android:layout_width="100dp"
+                android:layout_height="47dp"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:background="@drawable/background_gradation_2"/>
+
+            <RelativeLayout
+                android:id="@+id/tab_gradation_1"
+                android:layout_width="100dp"
+                android:layout_height="47dp"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                android:background="@drawable/background_gradation_1"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_condition2"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:orientation="horizontal"
+            android:background="#7199ff"
+            >
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="전체"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/sae_all"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="매매"
+                android:textColor="#80ffffff"
+                android:textSize="13sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/maemae"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="전세"
+                android:textColor="#80ffffff"
+                android:textSize="13sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/junsae"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="월세"
+                android:textColor="#80ffffff"
+                android:textSize="13sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/woalsae"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/main_pager" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:id="@+id/capture_con"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <FrameLayout
+                android:id="@+id/capture_title_con"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="#ffffff"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="9dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="28dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/back_img"
+                    android:id="@+id/capture_back_btn"
+                    />
+
+                <TextView
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#5a5a5a"
+                    android:text="드로잉"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notosans_medium"
+                    />
+
+                <FrameLayout
+                    android:layout_marginRight="41dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:id="@+id/drawing_icon_con"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_width="23dp"
+                        android:layout_height="27dp"
+                        android:background="@drawable/eraser"
+                        android:id="@+id/capture_eraser"
+                        />
+
+                    <ImageView
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_width="23dp"
+                        android:layout_height="27dp"
+                        android:background="@drawable/brush"
+                        android:id="@+id/capture_brush"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/capture_refresh_con"
+                    android:layout_marginRight="14dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_width="23dp"
+                        android:layout_height="27dp"
+                        android:background="@drawable/draw_refresh"
+                        android:id="@+id/capture_refresh"
+                        />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="아래 영역만 저장됩니다."
+                    android:textSize="14dp"
+                    />
+
+            </FrameLayout>
+
+            <app.cosmos.ghrealestatediary.DrawingView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="44dp"
+                android:id="@+id/drawView"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:background="#7199ff"
+            android:id="@+id/capture_text_con"
+            >
+
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="저장하기"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:id="@+id/capture_text"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

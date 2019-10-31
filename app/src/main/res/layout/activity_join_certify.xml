@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <WebView
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_img"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원 가입"
+            android:textColor="#5a5a5a"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+        <ProgressBar
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:max="100"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3"
+        />
+
+        <LinearLayout
+            android:layout_marginTop="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <EditText
+                    android:padding="14dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:layout_width="170dp"
+                    android:layout_height="53dp"
+                    android:inputType="phone"
+                    android:hint="핸드폰 번호"
+                    android:textColorHint="#b5b5b5"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:background="@drawable/border"
+                    android:id="@+id/phone"
+                    android:enabled="true"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_width="71dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/certify_background"
+                    android:id="@+id/certify_con"
+                    >
+
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="인증 번호"
+                        android:textColor="#111111"
+                        android:textSize="12sp"
+                        android:id="@+id/certify"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:fontFamily="@font/notosans_medium"
+                        />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/guide_txt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:text="* '-'없이 휴대폰 번호 11자리를 입력해주세요."
+                android:textColor="#b5b5b5"
+                android:fontFamily="@font/notosans_regular"/>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <EditText
+                    android:padding="14dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_gravity="center"
+                    android:gravity="left|center_vertical"
+                    android:layout_width="170dp"
+                    android:layout_height="53dp"
+                    android:inputType="number"
+                    android:hint="인증 번호 (4자리)"
+                    android:textColorHint="#b5b5b5"
+                    android:textColor="#2f2f2f"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:background="@drawable/border"
+                    android:id="@+id/number"
+                    android:enabled="true"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_width="71dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/certify_background"
+                    android:id="@+id/ok_con"
+                    >
+
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="인증 확인"
+                        android:textColor="#111111"
+                        android:textSize="12sp"
+                        android:id="@+id/ok"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:fontFamily="@font/notosans_medium"
+                        />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/guide_txt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:text="* 인증 번호 4자리를 입력해주세요."
+                android:textColor="#b5b5b5"
+                android:fontFamily="@font/notosans_regular"/>
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        >
+        <LinearLayout
+            android:id="@+id/checkbox_con"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/total_con"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_total_agree"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:textColor="#6799FF"
+                    android:text="전체 동의"
+                    android:textSize="17sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/notosans_medium"
+                    />
+                <CheckBox
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/agree_check"
+                    android:id="@+id/checkbox_total"
+                    android:focusable="false"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="26dp"
+                android:layout_gravity="center"
+                android:layout_width="260dp"
+                android:layout_height="1px"
+                android:background="#d5d5d5"/>
+
+
+            <LinearLayout
+                android:id="@+id/service_agree_con"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_service_agree"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#b5b5b5"
+                    android:text="서비스 이용약관 동의"
+                    android:textSize="14sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <CheckBox
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/agree_check"
+                    android:id="@+id/checkbox_service"
+                    android:focusable="false"
+                    android:checked="false"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/info_agree_con"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_info_agree"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#b5b5b5"
+                    android:text="개인정보 취급방침 동의"
+                    android:textSize="14sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <CheckBox
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/agree_check"
+                    android:id="@+id/checkbox_info"
+                    android:focusable="false"
+                    android:checked="false"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#b6b6b6"
+        android:id="@+id/next_con"
+        >
+
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="다음"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/next"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

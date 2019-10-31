@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#eeeeee"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_line_back"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:id="@+id/btn1"
+            android:text="일주일간 보지 않기"
+            android:textSize="13dp"
+            android:textColor="#7299ff"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="17dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_noline_back"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:id="@+id/btn2"
+            android:text="닫기"
+            android:textSize="13dp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

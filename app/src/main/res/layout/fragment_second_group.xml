@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragmentGroup">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#f5f5f5">
+
+        <FrameLayout
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="19dp"
+            android:layout_width="99dp"
+            android:layout_height="32dp">
+
+            <app.cosmos.ghrealestatediary.SpinnerReselect
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f5f5f5"
+                android:spinnerMode="dropdown"
+                android:scrollbars="none"
+                android:layout_gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:background="@drawable/border_radius"
+                android:paddingLeft="13dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner_text1"
+                android:textColor="#5a5a5a"
+                android:textSize="13sp"
+                android:text="최신순"
+                android:gravity="center_vertical|left"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+            <ImageView
+                android:id="@+id/down1"
+                android:layout_width="21dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/down"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_width="99dp"
+            android:layout_height="32dp">
+
+            <app.cosmos.ghrealestatediary.SpinnerReselect
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f5f5f5"
+                android:spinnerMode="dropdown"
+                android:scrollbars="none"
+                android:layout_gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:background="@drawable/border_radius"
+                android:paddingLeft="13dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner_text2"
+                android:textColor="#5a5a5a"
+                android:textSize="13sp"
+                android:text="전체"
+                android:gravity="center_vertical|left"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+            <ImageView
+                android:id="@+id/down2"
+                android:layout_width="21dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/down"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_width="99dp"
+            android:layout_height="32dp">
+
+            <app.cosmos.ghrealestatediary.SpinnerReselect
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f5f5f5"
+                android:spinnerMode="dropdown"
+                android:scrollbars="none"
+                android:layout_gravity="center_vertical|center_horizontal"
+                />
+
+            <TextView
+                android:background="@drawable/border_radius"
+                android:paddingLeft="13dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner_text3"
+                android:textColor="#5a5a5a"
+                android:textSize="13sp"
+                android:text="전체"
+                android:gravity="center_vertical|left"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+            <ImageView
+                android:id="@+id/down3"
+                android:layout_width="21dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/down"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView_con"
+        android:background="#ffffff"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textColor="#bcbcbc"
+            android:text="매물 목록이 존재하지 않습니다."
+            android:textSize="16sp"
+            android:fontFamily="@font/notosans_regular"
+            />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ListView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:id="@+id/buildingListView"
+                android:textFilterEnabled="true"
+                android:groupIndicator="@null"
+                android:background="#ffffff"
+                android:dividerHeight="1px"
+                android:divider="#e3e3e3"
+                />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:layout_gravity="top"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:max="100"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

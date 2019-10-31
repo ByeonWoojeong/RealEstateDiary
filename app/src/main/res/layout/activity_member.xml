@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#fff"
+        >
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_img"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그룹 관리"
+            android:textColor="#5a5a5a"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/invite_con"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="초대"
+                android:textColor="@color/baseColor"
+                android:textSize="15sp"
+                android:layout_gravity="right|center_vertical"
+                android:id="@+id/invite"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:max="100"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#7199ff"
+        >
+
+        <app.cosmos.ghrealestatediary.CustomTabLayout.TabLayoutWithArrow
+            style="@style/TabLayout2"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance2"
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/transparent"
+            android:overScrollMode="never"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabPaddingStart="-1dp"
+            app:tabPaddingEnd="-1dp"
+            />
+
+    </FrameLayout>
+
+    <include layout="@layout/group_pager" />
+
+</LinearLayout>

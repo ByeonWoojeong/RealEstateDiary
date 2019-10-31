@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupAcitivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#fff"
+        >
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_img"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그룹 관리"
+            android:textColor="#5a5a5a"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/invite_con"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="생성"
+                android:textColor="@color/baseColor"
+                android:textSize="15sp"
+                android:layout_gravity="right|center_vertical"
+                android:id="@+id/invite"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:max="100"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e3e3e3" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#f7f7f7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="초대된 그룹"
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:fontFamily="@font/notosans_medium" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/invite_list_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:textColor="#bcbcbc"
+                android:text="초대된 그룹이 없습니다."
+                android:background="#fff"
+                android:textSize="16sp"
+                android:fontFamily="@font/notosans_regular"
+                />
+
+
+            <ListView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:id="@+id/group_invite_listview"
+                android:groupIndicator="@null"
+                android:background="#fff"
+                android:dividerHeight="1px"
+                android:divider="#e3e3e3"
+                />
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#f7f7f7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:text="공유된 매물은 지도에 파란색으로 표시됩니다."
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:fontFamily="@font/notosans_medium" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="162dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:textColor="#bcbcbc"
+                android:text="그룹 목록이 없습니다."
+                android:textSize="16sp"
+                android:fontFamily="@font/notosans_regular"
+                />
+
+            <ListView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:id="@+id/my_group_listview"
+                android:groupIndicator="@null"
+                android:background="#fff"
+                android:dividerHeight="1px"
+                android:divider="#e3e3e3"
+                />
+
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f7f7f7" />
+
+    </LinearLayout>
+
+</LinearLayout>

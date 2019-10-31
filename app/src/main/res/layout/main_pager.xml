@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.wunderlist.slidinglayer.SlidingLayer
+            android:layout_marginTop="9dp"
+            android:layout_gravity="left|top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/slidingLayer"
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/left_menu1"
+                    android:id="@+id/left_menu1"
+                    />
+
+                <com.wunderlist.slidinglayer.SlidingLayer
+                    android:layout_width="159dp"
+                    android:layout_height="53dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/slidingLayer2"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/left_side_menu1"
+                            android:id="@+id/left_side_menu1"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/left_side_menu2"
+                            android:id="@+id/left_side_menu2"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/left_side_menu3"
+                            android:id="@+id/left_side_menu3"
+                            />
+
+                    </LinearLayout>
+
+                </com.wunderlist.slidinglayer.SlidingLayer>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="53dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/left_menu21"
+                    android:id="@+id/left_menu21"
+                    />
+
+                <com.wunderlist.slidinglayer.SlidingLayer
+                    android:layout_width="212dp"
+                    android:layout_height="53dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/slidingLayer21"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/left_side_menu4"
+                            android:id="@+id/left_side_menu4"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/left_side_menu5"
+                            android:id="@+id/left_side_menu5"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/left_side_menu6"
+                            android:id="@+id/left_side_menu6"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/left_side_menu7"
+                            android:id="@+id/left_side_menu7"
+                            />
+
+                    </LinearLayout>
+
+                </com.wunderlist.slidinglayer.SlidingLayer>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_marginTop="106dp"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:background="@drawable/left_menu2"
+                android:id="@+id/left_menu2"
+                />
+
+            <ImageView
+                android:layout_marginTop="159dp"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:background="@drawable/left_menu3"
+                android:id="@+id/left_menu3"
+                />
+
+            <FrameLayout
+                android:layout_marginTop="212dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/close_place"
+                    android:id="@+id/left_menu4"
+                    />
+
+                <com.wunderlist.slidinglayer.SlidingLayer
+                    android:layout_width="318dp"
+                    android:layout_height="53dp"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/slidingLayer4"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/bank"
+                            android:id="@+id/left_side_bank"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/mart"
+                            android:id="@+id/left_side_mart"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/drugstore"
+                            android:id="@+id/left_side_drugstore"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/oilbank"
+                            android:id="@+id/left_side_oilbank"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/cafe"
+                            android:id="@+id/left_side_cafe"
+                            />
+
+                        <ImageView
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:background="@drawable/convenience"
+                            android:id="@+id/left_side_convenience"
+                            />
+
+                    </LinearLayout>
+
+                </com.wunderlist.slidinglayer.SlidingLayer>
+
+            </FrameLayout>
+
+        </com.wunderlist.slidinglayer.SlidingLayer>
+
+        <LinearLayout
+            android:layout_marginTop="9dp"
+            android:layout_gravity="right|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:background="@drawable/right_menu1"
+                android:id="@+id/right_menu1"
+                />
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:background="@drawable/right_menu2"
+                android:id="@+id/right_menu2"
+                />
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:background="@drawable/right_menu3"
+                android:id="@+id/right_menu3"
+                />
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:background="@drawable/right_menu4"
+                android:id="@+id/right_menu4"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/map_refresh"
+            android:id="@+id/refresh_map"
+            />
+
+        <com.victor.loading.rotate.RotateLoading
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/rotateloading"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            app:loading_speed="11"
+            app:loading_width="5dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:background="#f7f7f7"
+            android:id="@+id/filter"
+            android:visibility="gone"
+            android:fillViewport="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/filter_con_con"
+                >
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView_con"
+            android:background="#ffffff"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textColor="#bcbcbc"
+                android:text="매물 목록이 존재하지 않습니다."
+                android:textSize="16sp"
+                android:fontFamily="@font/notosans_regular"
+                />
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ListView
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:id="@+id/memberListView"
+                    android:textFilterEnabled="true"
+                    android:groupIndicator="@null"
+                    android:background="#ffffff"
+                    android:dividerHeight="1px"
+                    android:divider="#e3e3e3"
+                    />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <ProgressBar
+                android:layout_gravity="top"
+                android:layout_marginBottom="-8dp"
+                android:layout_marginTop="-6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"
+                android:max="100"
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#7199ff"
+        android:id="@+id/under_text_con"
+        >
+
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="매물 목록보기"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/under_text"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

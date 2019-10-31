@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:id="@+id/container"
+        tools:background="#ff0000"
+        >
+
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5a5a5a"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:background="@null"
+            android:id="@+id/title"
+            tools:text="title"
+            android:fontFamily="@font/notosans_regular"
+            />
+
+        <LinearLayout
+            android:layout_marginRight="18dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7199ff"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:background="@null"
+                android:id="@+id/price"
+                tools:text="price"
+                android:fontFamily="@font/notosans_bold"
+                />
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="원"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:background="@null"
+                android:id="@+id/price_side"
+                android:fontFamily="@font/notosans_regular"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3"
+        />
+
+</LinearLayout>

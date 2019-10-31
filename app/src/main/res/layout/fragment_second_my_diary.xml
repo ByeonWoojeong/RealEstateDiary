@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:background="#f8f8f8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/menu2_1_con"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:text="그룹 만들기"
+                        android:id="@+id/menu2_1"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#e3e3e3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/menu2_2_con"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:text="그룹 초대하기"
+                        android:id="@+id/menu2_2"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#e3e3e3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/menu2_3_con"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:text="그룹 초대 승인 관리"
+                        android:id="@+id/menu2_3"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#e3e3e3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/menu2_4_con"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:text="그룹원 목록"
+                        android:id="@+id/menu2_4"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#e3e3e3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/menu2_5_con"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:text="그룹 탈퇴"
+                        android:id="@+id/menu2_5"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#e3e3e3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="1"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_img"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5a5a5a"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/toolbar_title"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/next_con"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="완료"
+                android:textColor="@color/grayColor"
+                android:textSize="15sp"
+                android:layout_gravity="right|center_vertical"
+                android:id="@+id/next"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:id="@+id/scrollView"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/name_con"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="고객 이름"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <EditText
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#cccccc"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:maxLength="20"
+                        android:background="@null"
+                        android:id="@+id/name"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/phone_con"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="연락처"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <EditText
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#cccccc"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:maxLength="13"
+                        android:background="@null"
+                        android:id="@+id/phone"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/first_date_con"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="최초 상담일"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        android:id="@+id/first_date"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/target_date_con"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이사 상담일"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        android:id="@+id/target_date"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <FrameLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content_con"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="228dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="상담 내용"
+                            android:textColor="#a7a7a7"
+                            android:textSize="12sp"
+                            android:layout_gravity="left|center_vertical"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <EditText
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#cccccc"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:background="@null"
+                            android:id="@+id/content"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:id="@+id/image_con"
+                >
+
+                <HorizontalScrollView
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:overScrollMode="never"
+                    android:background="#ffffff"
+                    android:id="@+id/horizontalScrollView"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="136dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_marginRight="9dp"
+                            android:layout_width="94dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageview_con0"
+                            android:visibility="gone"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview0"
+                                />
+
+                            <ImageView
+                                android:layout_gravity="right|top"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:background="@drawable/image_close"
+                                android:id="@+id/close_imageview0"
+                                />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_marginRight="9dp"
+                            android:layout_width="94dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageview_con1"
+                            android:visibility="gone"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview1"
+                                />
+
+                            <ImageView
+                                android:layout_gravity="right|top"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:background="@drawable/image_close"
+                                android:id="@+id/close_imageview1"
+                                />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_marginRight="9dp"
+                            android:layout_width="94dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageview_con2"
+                            android:visibility="gone"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageview2"
+                                />
+
+                            <ImageView
+                                android:layout_gravity="right|top"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:background="@drawable/image_close"
+                                android:id="@+id/close_imageview2"
+                                />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#ffffff"
+        >
+
+        <View
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e3e3e3"
+            />
+
+        <ImageButton
+            android:layout_marginLeft="15dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/camera"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/camera"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

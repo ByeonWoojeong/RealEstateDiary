@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:background="#f8f8f8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu3_0_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="공지사항"
+                    android:id="@+id/menu3_0"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu3_1_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="문의하기"
+                    android:id="@+id/menu3_1"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu3_2_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="FAQ"
+                    android:id="@+id/menu3_2"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu3_3_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="결제 내역"
+                    android:id="@+id/menu3_3"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu3_4_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="버전 정보"
+                    android:id="@+id/menu3_4"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#cacaca"
+                    android:textSize="13sp"
+                    android:text="@string/version"
+                    android:fontFamily="@font/notosans_medium"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu3_5_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="ABOUT"
+                    android:id="@+id/menu3_5"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="57dp"-->
+                <!--android:id="@+id/menu3_6_con"-->
+                <!--android:background="#ffffff"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="18dp"-->
+                    <!--android:layout_gravity="left|center_vertical"-->
+                    <!--android:includeFontPadding="false"-->
+                    <!--android:letterSpacing="-0.05"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="#5a5a5a"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:text="사업자 정보"-->
+                    <!--android:id="@+id/menu3_6"-->
+                    <!--android:fontFamily="@font/notosans_regular"-->
+                    <!--/>-->
+
+            <!--</FrameLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="#e3e3e3" />-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu3_7_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="로그아웃"
+                    android:id="@+id/menu3_7"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu3_8_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="탈퇴"
+                    android:id="@+id/menu3_8"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

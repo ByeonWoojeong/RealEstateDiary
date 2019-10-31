@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.cosmos.ghrealestatediary.CheckableLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e3e3e3"
+    >
+
+    <FrameLayout
+        android:layout_marginRight="1px"
+        android:layout_marginBottom="1px"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="horizontal"
+        android:id="@+id/list_con"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:id="@+id/checkbox"
+                android:focusable="false"
+                android:clickable="false"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#787878"
+            android:textSize="14sp"
+            android:id="@+id/name"
+            android:fontFamily="@font/notosans_regular"
+            tools:text="name"
+            />
+
+    </FrameLayout>
+
+</app.cosmos.ghrealestatediary.CheckableLinearLayout>

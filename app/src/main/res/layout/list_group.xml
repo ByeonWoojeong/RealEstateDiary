@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="vertical"
+            android:gravity="left|center_vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_marginLeft="19dp"
+                android:layout_marginBottom="8dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="left|center_vertical"
+                android:id="@+id/group_name"
+                android:fontFamily="@font/notosans_medium"
+                android:textColor="#7199FF"
+                tools:text="그룹 이름"
+                />
+
+            <TextView
+                android:layout_marginLeft="19dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5a5a5a"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:background="@null"
+                android:id="@+id/boss_phone"
+                android:fontFamily="@font/notosans_medium"
+                tools:text="그룹장 전화번호"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/out_con"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_marginRight="19dp"
+                android:layout_marginLeft="19dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:text="탈퇴"
+                android:textColor="#E82D2D"
+                android:maxLines="1"
+                android:id="@+id/out"
+                android:visibility="visible"
+                android:fontFamily="@font/notosans_regular"
+                />
+
+
+        </LinearLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:id="@+id/share_check_con"
+        >
+        <CheckBox
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginRight="17dp"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/share_check"
+            android:id="@+id/share_check"
+            android:focusable="false"
+            android:checked="false"
+            />
+    </FrameLayout>
+
+</LinearLayout>

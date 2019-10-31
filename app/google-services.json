@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1012172878086",
+    "firebase_url": "https://ghsoft01.firebaseio.com",
+    "project_id": "ghsoft01",
+    "storage_bucket": "ghsoft01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012172878086:android:c570984ae806db84",
+        "android_client_info": {
+          "package_name": "app.cosmos.ghrealestatediary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012172878086-e1qs9340t5tblcio5ggt22j3upjq51cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhO1glF38LhhZMtwcSFJF4DvuKzV0m0zs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

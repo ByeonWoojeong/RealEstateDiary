@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:background="#f8f8f8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu1_0_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="그룹 관리"
+                    android:id="@+id/menu1_0"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu1_1_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="내 프로필"
+                    android:id="@+id/menu1_1"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/menu1_2_con"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:text="비밀번호 변경"
+                        android:id="@+id/menu1_2"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#e3e3e3" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu1_3_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="푸쉬 설정"
+                    android:id="@+id/menu1_3"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu1_4_con"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="앱 공유하기"
+                    android:id="@+id/menu1_4"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:id="@+id/menu1_5_con"
+                android:background="#ffffff"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:text="추천인 코드 입력"
+                    android:id="@+id/menu1_5"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

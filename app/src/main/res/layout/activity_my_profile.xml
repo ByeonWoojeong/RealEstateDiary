@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafafa">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_img"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 프로필"
+            android:textColor="#5a5a5a"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/next_con"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정"
+                android:textColor="@color/grayColor"
+                android:textSize="15sp"
+                android:layout_gravity="right|center_vertical"
+                android:id="@+id/next"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:max="100"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_weight="1"
+        android:background="#fafafa"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <EditText
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:padding="@null"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textFilter|textNoSuggestions"
+                    android:hint="이름(필수)"
+                    android:autoText="false"
+                    android:textColorHint="#cccccc"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:id="@+id/name"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="핸드폰번호"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <EditText
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:padding="@null"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="핸드폰번호(필수)"
+                    android:textColorHint="#cccccc"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:id="@+id/phone"
+                    android:enabled="false"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/address_next_con"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="지역"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <EditText
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:hint="선택해주세요"
+                        android:textColorHint="#cccccc"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        android:background="@null"
+                        android:id="@+id/address"
+                        android:enabled="false"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_width="28dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/next_img"
+                    android:id="@+id/address_next"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부동산 이름"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <EditText
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:padding="@null"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textFilter|textNoSuggestions"
+                    android:autoText="false"
+                    android:hint="부동산 이름(필수)"
+                    android:textColorHint="#cccccc"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:id="@+id/realestate_name"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부동산 연락처"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <LinearLayout
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:id="@+id/realestate_tel_area"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <EditText
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:hint="부동산 연락처(필수)"
+                        android:textColorHint="#cccccc"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        android:background="@null"
+                        android:id="@+id/realestate_tel"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

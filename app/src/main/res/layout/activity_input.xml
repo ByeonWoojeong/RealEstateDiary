@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="1"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_img"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5a5a5a"
+            android:textSize="18sp"
+            android:text="매물"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/toolbar_title"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/next_con"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정"
+                android:textColor="#7199ff"
+                android:textSize="15sp"
+                android:layout_gravity="right|center_vertical"
+                android:id="@+id/next"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:max="100"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:id="@+id/scrollView"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상태"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <FrameLayout
+                    android:layout_marginLeft="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="85dp"
+                    android:layout_height="33dp">
+
+                    <app.cosmos.ghrealestatediary.SpinnerReselect
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:spinnerMode="dropdown"
+                        android:scrollbars="none"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        />
+
+                    <TextView
+                        android:background="@drawable/spinner_back"
+                        android:paddingLeft="13dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spinner_text"
+                        android:textColor="#5a5a5a"
+                        android:textSize="13sp"
+                        android:text="선택"
+                        android:gravity="center_vertical|left"
+                        android:fontFamily="@font/notosans_medium"
+                        />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="307dp"
+                android:orientation="vertical"
+                android:id="@+id/image_con"
+                android:background="#fafafa"
+                android:visibility="gone"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="229dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/main_image"
+                        />
+
+                    <FrameLayout
+                        android:id="@+id/input_count"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="37dp"
+                        android:layout_height="22dp"
+                        android:background="@drawable/input_count"
+                        >
+
+                        <TextView
+                            android:layout_marginRight="9dp"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp"
+                            android:layout_gravity="right|center_vertical"
+                            android:id="@+id/count_text"
+                            android:fontFamily="@font/notosans_bold"
+                            />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="29dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/left_scroll_con"
+                        >
+
+                        <ImageView
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_width="20dp"
+                            android:layout_height="23dp"
+                            android:background="@drawable/input_left"
+                            android:id="@+id/left_scroll"
+                            />
+
+                    </FrameLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"
+                        android:overScrollMode="never"
+                        android:id="@+id/horizontalScrollView"
+                        android:layout_weight="1"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_marginRight="7dp"
+                                android:layout_width="96dp"
+                                android:layout_height="63dp"
+                                android:id="@+id/image1"
+                                android:visibility="gone"
+                                />
+
+                            <ImageView
+                                android:layout_marginRight="7dp"
+                                android:layout_width="96dp"
+                                android:layout_height="63dp"
+                                android:id="@+id/image2"
+                                android:visibility="gone"
+                                />
+
+                            <ImageView
+                                android:layout_marginRight="7dp"
+                                android:layout_width="96dp"
+                                android:layout_height="63dp"
+                                android:id="@+id/image3"
+                                android:visibility="gone"
+                                />
+
+                            <ImageView
+                                android:layout_marginRight="7dp"
+                                android:layout_width="96dp"
+                                android:layout_height="63dp"
+                                android:id="@+id/image4"
+                                android:visibility="gone"
+                                />
+
+                            <ImageView
+                                android:layout_marginRight="7dp"
+                                android:layout_width="96dp"
+                                android:layout_height="63dp"
+                                android:id="@+id/image5"
+                                android:visibility="gone"
+                                />
+
+                            <ImageView
+                                android:layout_marginRight="7dp"
+                                android:layout_width="96dp"
+                                android:layout_height="63dp"
+                                android:id="@+id/image6"
+                                android:visibility="gone"
+                                />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <FrameLayout
+                        android:layout_width="29dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/right_scroll_con"
+                        >
+
+                        <ImageView
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_width="20dp"
+                            android:layout_height="23dp"
+                            android:background="@drawable/input_right"
+                            android:id="@+id/right_scroll"
+                            />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#e3e3e3"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="제목"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:maxLength="20"
+                        android:background="@null"
+                        android:id="@+id/title"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="주소"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        android:id="@+id/address"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/address_detail_con"
+                >
+
+                <LinearLayout
+                    android:id="@+id/dong_con"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="동"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#cccccc"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:inputType="text|textFilter|textNoSuggestions"
+                        android:maxLines="1"
+                        android:maxLength="5"
+                        android:background="@null"
+                        android:id="@+id/dong"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ho_con"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="호"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#cccccc"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="5"
+                        android:background="@null"
+                        android:id="@+id/ho"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/now_floor_con"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="현재 층"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#cccccc"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="5"
+                        android:background="@null"
+                        android:id="@+id/now_floor"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#cccccc"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/all_floor_con"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="전체 층"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#cccccc"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="5"
+                        android:background="@null"
+                        android:id="@+id/all_floor"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cccccc"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세주소"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:padding="@null"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:id="@+id/address2"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전체면적"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="7"
+                            android:background="@null"
+                            android:id="@+id/area1"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:text="평"
+                            android:textSize="14sp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/area1_unit"
+                            android:visibility="gone"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#e3e3e3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전용면적"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="7"
+                            android:background="@null"
+                            android:id="@+id/area2"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:text="평"
+                            android:textSize="14sp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/area2_unit"
+                            android:visibility="gone"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="매매"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="11"
+                            android:background="@null"
+                            android:id="@+id/maemae"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:text="만원"
+                            android:textSize="14sp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/maemae_unit"
+                            android:visibility="gone"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#e3e3e3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전세"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="11"
+                            android:background="@null"
+                            android:id="@+id/junsae"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:text="만원"
+                            android:textSize="14sp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/junsae_unit"
+                            android:visibility="gone"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="월세 보증금"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="11"
+                            android:background="@null"
+                            android:id="@+id/woalsae"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:text="만원"
+                            android:textSize="14sp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/woalsae_unit"
+                            android:visibility="gone"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#e3e3e3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="임대료"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="11"
+                            android:background="@null"
+                            android:id="@+id/imdae"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:text="만원"
+                            android:textSize="14sp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/bojeung_unit"
+                            android:visibility="gone"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="권리금"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="11"
+                            android:background="@null"
+                            android:id="@+id/geunri"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:text="만원"
+                            android:textSize="14sp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/geunri_unit"
+                            android:visibility="gone"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#e3e3e3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="관리비"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="11"
+                            android:background="@null"
+                            android:id="@+id/gaunri"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:text="만원"
+                            android:textSize="14sp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/gaunri_unit"
+                            android:visibility="gone"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="집 비밀번호"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="15"
+                            android:background="@null"
+                            android:id="@+id/door_lock1"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#e3e3e3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="현관 비밀번호"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        >
+
+                        <TextView
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="15"
+                            android:background="@null"
+                            android:id="@+id/door_lock2"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="담당자"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp"
+                        android:layout_gravity="left|center_vertical"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:padding="@null"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5a5a5a"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        android:background="@null"
+                        android:id="@+id/damdang"
+                        android:fontFamily="@font/notosans_regular"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#e3e3e3"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/call_con"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="담당자 전화번호"
+                            android:textColor="#a7a7a7"
+                            android:textSize="12sp"
+                            android:layout_gravity="left|center_vertical"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:maxLength="13"
+                            android:background="@null"
+                            android:id="@+id/damdang_phone"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/call"
+                        android:id="@+id/call"
+                        />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/finish_date_con"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="18dp"
+                        android:fontFamily="@font/notosans_regular"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:text="계약 만료일"
+                        android:textColor="#a7a7a7"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/finish_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:background="@null"
+                        android:fontFamily="@font/notosans_medium"
+                        android:gravity="right"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.05"
+                        android:padding="@null"
+                        android:textColor="#1d1d1d"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e3e3e3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <FrameLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="228dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="상세설명"
+                            android:textColor="#a7a7a7"
+                            android:textSize="12sp"
+                            android:layout_gravity="left|center_vertical"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:padding="@null"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="-0.05"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#5a5a5a"
+                            android:textSize="14sp"
+                            android:background="@null"
+                            android:id="@+id/sangse"
+                            android:fontFamily="@font/notosans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

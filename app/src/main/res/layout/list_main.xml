@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:layout_width="57dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:background="@drawable/map_icon"
+                android:id="@+id/map"
+                />
+
+            <View
+                android:layout_gravity="right"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#e3e3e3"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            >
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/notosans_bold"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:maxLines="1"
+                    android:textColor="#f34479"
+                    android:textSize="11sp"
+                    tools:text="status" />
+
+            <LinearLayout
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:textSize="14sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:id="@+id/title2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/notosans_regular"
+                    tools:text="title2매물제목"
+                    />
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:id="@+id/title1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/notosans_regular"
+                    tools:text="title1 평수"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/delete_btn_con"
+            >
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="19dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삭제"
+                android:textColor="#f21f1f"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:id="@+id/delete_btn"
+                android:fontFamily="@font/notosans_regular"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:id="@+id/share_check_con"
+            >
+            <CheckBox
+                android:visibility="gone"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginRight="17dp"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/share_check"
+                android:id="@+id/share_check"
+                android:focusable="false"
+                android:checked="false"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

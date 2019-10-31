@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/item_con"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/filter_title"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23sp"
+                android:text="전세 (백만원)"
+                android:textSize="15sp"
+                android:textColor="#262626"
+                android:fontFamily="@font/notosans_medium"/>
+
+            <EditText
+                android:id="@+id/start_price"
+                android:layout_marginTop="12dp"
+                android:layout_width="140dp"
+                android:layout_height="39dp"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border_radius"
+                android:textSize="13sp"
+                android:textColor="#242424"
+                android:inputType="number"
+                android:fontFamily="@font/notosans_regular"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:hint="최소 금액"/>
+
+            <EditText
+                android:id="@+id/end_price"
+                android:layout_marginTop="8dp"
+                android:layout_width="140dp"
+                android:layout_height="39dp"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border_radius"
+                android:textSize="13sp"
+                android:textColor="#242424"
+                android:inputType="number"
+                android:fontFamily="@font/notosans_regular"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:hint="최대 금액"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

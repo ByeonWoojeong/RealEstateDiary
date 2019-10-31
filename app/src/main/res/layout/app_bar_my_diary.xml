@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.cosmos.ghrealestatediary.MyDiaryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:elevation="0dp"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <ImageView
+                android:layout_marginLeft="9dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="28dp"
+                android:layout_height="32dp"
+                android:background="@drawable/back_img"
+                android:id="@+id/back"
+                />
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My diary"
+                android:textColor="#5a5a5a"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8e8e8e"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal|top"
+            android:id="@+id/email"
+            android:fontFamily="@font/notosans_regular"
+            tools:text="010-9090-2525"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="29dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:text="서비스 남은 기간"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/notosans_medium"
+                    />
+
+                <TextView
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#7199ff"
+                    android:textSize="24sp"
+                    android:id="@+id/day"
+                    android:fontFamily="@font/notosans_bold"
+                    tools:text="57"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_gravity="bottom"
+                    android:letterSpacing="-0.05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5a5a5a"
+                    android:text="일"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/notosans_regular"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginRight="28dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_width="64dp"
+                android:layout_height="33dp"
+                android:background="@drawable/pay"
+                android:id="@+id/pay"
+                />
+
+            <ProgressBar
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="-8dp"
+                android:layout_marginTop="-6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"
+                android:max="100"
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#7199ff"
+            >
+
+            <app.cosmos.ghrealestatediary.CustomTabLayout.TabLayoutWithArrow
+                style="@style/TabLayout2"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance2"
+                android:id="@+id/tabsMain"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/transparent"
+                android:overScrollMode="never"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabPaddingStart="-1dp"
+                app:tabPaddingEnd="-1dp"
+                />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/my_diary_pager" />
+
+</android.support.design.widget.CoordinatorLayout>

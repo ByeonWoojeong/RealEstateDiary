@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_img"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스 결제"
+            android:textColor="#5a5a5a"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:background="#f7f7f7"
+        >
+
+        <LinearLayout
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:id="@+id/subtitle"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#939393"
+                android:textSize="12sp"
+                android:text="모든 상품은 부가세 포함 금액입니다."
+                android:fontFamily="@font/notosans_regular"
+                />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_gravity="top"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:max="100"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:background="#f7f7f7"
+        android:id="@+id/scrollView"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/list_con"
+                android:background="#f7f7f7"
+
+                />
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="#e3e3e3"-->
+                <!--/>-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="31dp"-->
+                <!--android:background="#f7f7f7"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="18dp"-->
+                    <!--android:layout_marginRight="18dp"-->
+                    <!--android:includeFontPadding="false"-->
+                    <!--android:letterSpacing="-0.05"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="결제 수단 선택"-->
+                    <!--android:textColor="#939393"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_gravity="left|center_vertical"-->
+                    <!--android:fontFamily="@font/notosans_regular"-->
+                    <!--/>-->
+
+            <!--</FrameLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="#e3e3e3"-->
+                <!--/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:background="#ffffff"-->
+                <!--android:id="@+id/type_con"-->
+                <!--android:visibility="gone"-->
+                <!--&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="57dp"-->
+                    <!--android:id="@+id/card_con"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_marginLeft="18dp"-->
+                        <!--android:layout_marginRight="8dp"-->
+                        <!--android:layout_gravity="left|center_vertical"-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="16dp"-->
+                        <!--android:id="@+id/card_img"-->
+                        <!--android:background="@drawable/card"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:includeFontPadding="false"-->
+                        <!--android:letterSpacing="-0.05"-->
+                        <!--android:layout_gravity="left|center_vertical"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#5a5a5a"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:background="@null"-->
+                        <!--android:text="카드결제"-->
+                        <!--android:id="@+id/card"-->
+                        <!--android:fontFamily="@font/notosans_regular"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="#e3e3e3"-->
+                    <!--/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="57dp"-->
+                    <!--android:id="@+id/phone_con"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--&gt;-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_marginLeft="23dp"-->
+                        <!--android:layout_marginRight="12dp"-->
+                        <!--android:layout_gravity="left|center_vertical"-->
+                        <!--android:layout_width="11dp"-->
+                        <!--android:layout_height="17dp"-->
+                        <!--android:id="@+id/phone_img"-->
+                        <!--android:background="@drawable/phone"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:includeFontPadding="false"-->
+                        <!--android:letterSpacing="-0.05"-->
+                        <!--android:layout_gravity="left|center_vertical"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#5a5a5a"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:background="@null"-->
+                        <!--android:text="휴대폰결제"-->
+                        <!--android:id="@+id/phone"-->
+                        <!--android:fontFamily="@font/notosans_regular"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="#e3e3e3"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#b6b6b6"
+        android:id="@+id/next_con"
+        >
+
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="결제"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/next"
+            android:fontFamily="@font/notosans_medium"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

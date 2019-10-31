@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="264dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/custom_dialog_back">
+
+    <TextView
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:id="@+id/title1"
+        android:fontFamily="@font/notosans_regular"
+        />
+
+    <TextView
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:id="@+id/title2"
+        android:fontFamily="@font/notosans_regular"
+        />
+
+    <ProgressBar
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:indeterminateTint="#7199ff"
+        />
+
+</LinearLayout>

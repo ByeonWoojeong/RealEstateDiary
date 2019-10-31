@@ -1,0 +1,46 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#5a5a5a</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget"/>
+    <style name="TabLayout1" parent="android:Widget">
+        <item name="tabIndicatorColor">#7199ff</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="TabLayout2" parent="android:Widget">
+        <item name="tabIndicatorColor">#ffffff</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">15sp</item>
+        <item name="android:scrollbarThumbVertical">@color/transparent</item>
+    </style>
+    <style name="MyTabLayoutTextAppearance2" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">13sp</item>
+        <item name="android:scrollbarThumbVertical">@color/transparent</item>
+    </style>
+    <style name="TextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">#a7a7a7</item>
+        <item name="android:textSize">14sp</item>
+        <item name="colorAccent">#5a5a5a</item>
+        <item name="colorControlNormal">#a7a7a7</item>
+        <item name="colorControlActivated">#a7a7a7</item>
+    </style>
+    <style name="BrandedSwitch.control" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/baseColor</item>
+        <item name="colorSwitchThumbNormal">#5a5a5a</item>
+    </style>
+    <style name="BrandedSwitch.text" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">9dp</item>
+    </style>
+</resources>

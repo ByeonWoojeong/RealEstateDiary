@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.cosmos.ghrealestatediary.ToSActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:elevation="0dp"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#ffffff"
+            >
+
+            <ImageView
+                android:layout_marginLeft="9dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_width="28dp"
+                android:layout_height="32dp"
+                android:background="@drawable/back_img"
+                android:id="@+id/back_btn"
+                />
+
+            <TextView
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#5a5a5a"
+                android:text="이용약관"
+                android:textSize="18sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="#ffffff"
+            >
+
+            <app.cosmos.ghrealestatediary.CustomTabLayout.TabLayoutWithArrow
+                style="@style/TabLayout1"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                android:id="@+id/tabsMain"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@color/transparent"
+                android:overScrollMode="never"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabPaddingStart="-1dp"
+                app:tabPaddingEnd="-1dp"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:orientation="horizontal"
+            android:background="#7199ff"
+            >
+
+            <ImageView
+                android:layout_marginLeft="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/tos_title_img"
+                />
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:gravity="center_vertical|left"
+                android:id="@+id/subtitle"
+                android:fontFamily="@font/notosans_medium"
+                />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/tos_pager" />
+
+</android.support.design.widget.CoordinatorLayout>
